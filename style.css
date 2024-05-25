@@ -1,0 +1,119 @@
+body{
+    padding: 50px;
+    margin: 50px 250px 50px 250px;
+    background-color: rgb(243, 230, 216);
+    text-align: left;
+    font-size: large;
+    line-height: 150%;
+}
+.container{
+    background-color:white;
+    border: 1px solid rgb(255, 238, 238);
+    border-radius: 20px;
+    padding: 4%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+header img{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(254, 243, 243);
+    border-radius: 10px;
+}
+h1{
+   font-style: normal;
+   font-size: 280%;
+   font-family:"Times New Roman", Times, serif;
+}
+h3{
+   color:rgb(134, 5, 112)
+}
+h2{
+   color:darkred;
+   font-size: 180%;
+}
+ol.a{
+   list-style-type: 1;
+}
+table {
+   width: 95%;
+}
+td{
+   padding: 8px;
+   border-bottom: 1px solid #ddd;
+}
+.responsive {
+   width: 100%;
+   height: auto;
+}
+.prep{
+    background-color: rgb(255, 248, 240);
+    border-radius: 15px;
+    padding: 10px;
+    line-height: 250%;
+}
+
+ol { 
+    list-style: none; 
+    counter-reset: num; 
+} 
+ol li { 
+    counter-increment: num; 
+} 
+ol li::before { 
+    content: counter(num) ". "; 
+    color: rgb(134, 5, 112); 
+} 
+td:nth-child(even){
+    color: darkred;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    body {
+        padding: 30px;
+        margin: 50px 100px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        margin: 20px 50px;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    h3 {
+        font-size: 120%;
+    }
+    table {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    h2 {
+        font-size: 120%;
+    }
+    h3 {
+        font-size: 100%;
+    }
+    .container {
+        padding: 2%;
+    }
+    header img {
+        width: 100%;
+        height: auto;
+    }
+    table {
+        width: 100%;
+    }
+}
